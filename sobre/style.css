@@ -1,0 +1,73 @@
+/* ===== Sobre & Serviços — estilos específicos desta página ===== */
+
+.page-banner {
+  padding: 68px 0 48px;
+  border-bottom: 1px solid var(--line);
+}
+.page-banner h1 { max-width: 22ch; font-size: clamp(2rem, 4vw, 2.9rem); }
+.page-banner p { font-size: 1.15rem; color: var(--ink-soft); max-width: 56ch; }
+
+.sobre-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 64px;
+  align-items: center;
+}
+.sobre-grid img { border-radius: var(--radius); }
+@media (max-width: 860px) {
+  .sobre-grid { grid-template-columns: 1fr; gap: 32px; }
+}
+
+/* Serviços inclusos — lista com divisores, não cartões genéricos */
+.servicos-lista {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 56px;
+}
+.servico-item {
+  padding: 22px 0;
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.servico-item h3 {
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+  color: var(--olive-dark);
+}
+.servico-item p { margin: 0; color: var(--ink-soft); font-size: 1rem; }
+
+@media (max-width: 760px) {
+  .servicos-lista { grid-template-columns: 1fr; column-gap: 0; }
+}
+
+/* Extras */
+.extras-lede { font-size: 1.1rem; color: var(--ink-soft); margin-top: 14px; }
+.extras-lista {
+  list-style: none;
+  margin: 28px 0 0;
+  padding: 0;
+  max-width: 640px;
+}
+.extras-lista li {
+  padding: 16px 0;
+  border-top: 1px solid var(--line);
+  font-size: 1.05rem;
+}
+.extras-lista li:last-child { border-bottom: 1px solid var(--line); }
+
+/* Nota importante */
+.nota-box {
+  border-left: 4px solid var(--terracotta);
+  background: var(--cream);
+  padding: 28px 32px;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  max-width: 760px;
+}
+.nota-box h3 { color: var(--terracotta-dark); font-size: 1.25rem; }
+.nota-box p { margin: 0; color: var(--ink-soft); }
+
+.cta-final .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 8px; }
+.cta-outline { border-color: var(--cream); color: var(--cream); }
+.cta-outline:hover { background: var(--cream); color: var(--ink); }

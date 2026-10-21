@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aquarelapousadageriatrica.com.br/sitemap.xml
